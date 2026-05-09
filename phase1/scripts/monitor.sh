@@ -8,7 +8,7 @@ SERVICES=("ssh" "cron" "ufw")
 
 #----Logging function-----------------------
 log() { 
-	echo "[$date '+%Y-%m-%d %H:%M:%S')] $1" | sudo tee -a "$LOGFILE"
+	echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | sudo tee -a "$LOGFILE"
 }
 
 #----CPU check------------------------------
